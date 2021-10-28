@@ -36,20 +36,9 @@ $ lando drush tome:export -y
 $ lando drush tome:static --uri=https://2020.drupalcamp.nyc
 ```
 
-Rename html directory to docs for GitHub Pages.
+This exports the static HTML site to the `html` directory in the project root.
 
-```
-$ mv html docs
-```
-
-Push to `main` branch of a new GitHub repo. For example:
-
-```
-$ git add .
-$ git commit -m "Commit the static site export to GitHub."
-$ git remote add github git@github.com:hotwebmatter/tome-demo.git
-$ git push -u github main
-```
+Then you need to deploy that to a new repo on GitHub, configured appropriately for GitHub Pages.
 
 For more details, refer to the Tome documentation:
 
@@ -61,4 +50,9 @@ https://tome.fyi/docs/installing-existing-site/
 
 https://tome.fyi/docs/hosting/github-pages/
 
-**NOTE:** The GitHub Pages documentation for Tome is outdated; GitHub Pages now expects your static site to live [in the `main` branch](https://pages.github.com/).
+Some details in this Tome walkthrough may be outdated (compare with new docs at https://pages.github.com).
+
+There's also a Tome GitHub Pages project template here:
+
+https://github.com/drupal-tome/subdir-test
+
