@@ -26,7 +26,7 @@ $ lando composer require drupal/tome
 Drush enable Tome Static submodule.
 
 ```
-$ lando drush en tome_static
+$ lando drush en tome tome_static
 ```
 
 Export the Drupal site.
